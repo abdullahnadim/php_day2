@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blood Donor Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Donor Registration Form</h2>
+      <form action="registration_successfull.html" method="get">
+          <!-- <input type="text" name="username" id="u_name" width="100%" class="table form-control form-floating" placeholder="Enter your name">
+          <label for="u_name" class="label-floating">Enter your name</label> -->
+
+          <div class="form-floating mb-2">
+            <input type="text" name="username" id="u_name" class="form-control text-light bg-dark" placeholder="Enter your name">
+            <label for="u_name" class="text-light">Enter your name</label>
+          </div>
+          <div class="mb-2">
+            <label for="bld_grp" class="">Your Blood Group</label>
+            <select name="bloodgroup" id="bld_grp" class="form-control text-light bg-dark"  required>
+              <option value="a+" class="form-control text-light bg-dark">A+</option>
+              <option value="a-" class="form-control text-light bg-dark">A-</option>
+              <option value="b+" class="form-control text-light bg-dark">B+</option>
+              <option value="b-" class="form-control text-light bg-dark">B-</option>
+              <option value="o+" class="form-control text-light bg-dark">O+</option>
+              <option value="o" class="form-control text-light bg-dark">O-</option>
+              <option value="ab+">AB+</option>
+              <option value="ab-"  class="form-control text-light bg-dark">AB-</option>
+            </select>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="tel" name="contact" id="contct" class="form-control text-light bg-dark" placeholder="Phone Number">
+            <label for="u_name" class="text-light">Phone Number</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="text" name="address" id="addrss" class="form-control text-light bg-dark" placeholder="Enter your address">
+            <label for="addrss" class="text-light">Enter your address</label>
+          </div>
+          <div class="form-check mb-2">
+            <input type="radio" name="gender" id="male" value="male" class="text-light bg-dark form-check-input" placeholder="" required>
+            <label for="male" class="text-dark form-check-label">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female" class="text-light bg-dark form-check-input" placeholder="" required>
+            <label for="female" class="text-dark form-check-label">Female</label><br>
+            <input type="radio" name="gender" id="othrs" value="others" class="text-light bg-dark form-check-input" placeholder=""  required>
+            <label for="othrs" class="text-dark form-check-label">Others</label><br>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="date" name="last_donate" id="l_donate" class="form-control text-light bg-dark" placeholder="Your Last Donation Date">
+            <label for="l_donate" class="text-light">Your Last Donation Date</label><br>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="number" name="total_donation" id="total_donation" class="form-control text-light bg-dark" placeholder="How many times you donated blood">
+            <label for="total_donation" class="text-light">How many times you donated blood</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="email" name="email" id="mail" class="form-control text-light bg-dark">
+            <label for="mail" class="text-light">Enter your email address</label>
+          </div>
+          <input type="submit" value="Submit" class="bg-success text-white btn align-center">
+          <input type="reset" value="Reset" class="bg-secondary btn text-white">
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
+
